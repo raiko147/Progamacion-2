@@ -1,4 +1,6 @@
 #Programa de prueba (examen)
+print("Programa cajero Banco lA SARITA")
+print()
 #Aldo
 def menu():
   nnmobre()
@@ -46,5 +48,35 @@ def nedad():
     except ValueError:
       print("Ingrese Su Edad Correctamente")
       
-    hola comnome asdasdfasdfgeg
+#christian
+def nretiro():
+  os.system("clear")
+  global fondo
+  print("CUENTA CON UN SALDO DE",fondo,)
+  global retiro
+  while(1):
+    try:
+      print("Ingrese su monto de retiro: ")
+      retiro=input()
+      retiro=int(retiro)
+      while(retiro<0 or retiro>fondo):
+        print("Ingrese correctamente, no tiene saldo")
+        retiro=input()
+        retiro=int(retiro)
+      break
+    except ValueError:
+      print("Ingrese correctamente")
+      
+  fondo=fondo - retiro
+  
+  print()
+  print("**********Banco SARITA**********")
+  print("Nombre         :",nombre)
+  print("DNI            :",dni)
+  print("Saldo total    :",fondo)
+  print("Retiro         :",retiro)
+  time.sleep(4)
+   
     
+     
+     
