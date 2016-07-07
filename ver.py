@@ -1,3 +1,4 @@
 #Programa de prueba (examen)
-print("Hola mundo prueba grupal de github")
-print("Hola aqui reportandome para colaborar con vosotro"))
+print("\t\t***Programa que Permite Hallar Diferentes Funciones***")
+
+def 
