@@ -115,6 +115,45 @@ def nretiro():
   print("Saldo total    :",fondo)
   print("Retiro         :",retiro)
   time.sleep(4)
-   
-    
+  #jonathan
+def ndeposito():
+  os.system("clear")
+  global deposito
+  global fondo
+  print("Cuenta con un saldo de",fondo,)
+  while(1):
+    try:
+      print("ingrese su monto de deposito")
+      deposito=input()
+      deposito=int(deposito)
+      while(deposito<0):
+        deposito=input()
+        deposito=int(deposito)
+      break
+    except ValueError:
+      print("ingrese correctamente")
+  fondo=fondo+deposito
+  
+  print("************BANCO SARITA******")
+  print("NOMBRE           :",nombre)
+  print("DNI              :",dni)
+  print("SALDO TOTAL      :",fondo)
+  print("DEPOSITO         :",deposito)
+  time.sleep(4)
+def nprestamo():
+  os.system("clear")
+  global prestamo
+  while(1):
+    try:
+      print("ingrese su prestamo")
+      prestamo=input()
+      prestamo=int(prestamo)
+      while(prestamo<0):
+        print("ingrese correctamente su prestamo")
+        prestamo=input()
+        prestamo=int(prestamo)
+      break
+    except ValueError:
+      print("ingrese correctamente")
+  nmeses()
      
