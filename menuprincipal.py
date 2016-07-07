@@ -17,6 +17,45 @@ def opciones():
       print("2.- Retiro /deposito")
       print("3.- Prestamo")
       print("4.- Salir")
+      print("Ingrese una opcion ")
+      x=input()
+      x=int(x)
+      while (x<0 or x>4):
+        print("Ingrese correctamente la opcion de 1 a 4:")
+        x=input()
+        x=int(x)
+      break
+    except ValueError:
+      print("Error opcion invalida vuelva a intentar")
+  if(x==1):
+    nreporte()
+    opciones()
+  elif (x==2):
+    while (1):
+      try:
+        print("1.-Deposito")
+        print("2.-Retiro")
+        z=input
+        z=int(z)
+        while (x<0 or x>2):
+          print("Ingrese correctamente de 1 a 2")
+          z=input
+          z=int(z)
+        break
+      except ValueError:
+        print("Ingrese correctamente una opcion valida")
+    if (z==1):
+      ndeposito()
+      opciones()
+    elif (z==2):
+      nretiro()
+      opciones()
+  elif (x==3):
+    nprestamo()
+    opciones()
+  elif (x==4):
+    sys.exit()
+  
 
 #Julio
 def verificar(x):
