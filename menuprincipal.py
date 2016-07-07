@@ -1,6 +1,6 @@
 #Programa de prueba (examen)
-print("Programa cajero Banco lA SARITA")
-print()
+print("Programa cajero Banco lA SARITA...")
+print( )
 #Aldo
 def menu():
   nnmobre()
