@@ -1,1 +1,4 @@
-print("Hola mundo prueba")
+def aldogay():
+    print("Hola mundo prueba")
+
+aldogay()
