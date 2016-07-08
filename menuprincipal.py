@@ -3,7 +3,7 @@ print("Programa cajero Banco lA SARITA...")
 print( )
 #Aldo
 def menu():
-  nnmobre()
+  nnombre()
   ndni()
   nedad()
   opciones()
