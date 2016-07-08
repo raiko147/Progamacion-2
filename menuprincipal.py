@@ -12,12 +12,12 @@ def opciones():
   os.system("clear")
   while(1):
     try:
-      print("Banco Sarita")
-      print("1.- Reporte")
-      print("2.- Retiro /deposito")
-      print("3.- Prestamo")
-      print("4.- Salir")
-      print("Ingrese una opcion ")
+      print("\t\t*****Banco Sarita*****")
+      print("\t1.- Reporte")
+      print("\t2.- Retiro /deposito")
+      print("\t3.- Prestamo")
+      print("\t4.- Salir")
+      print("Ingrese una opcion: ")
       x=input()
       x=int(x)
       while (x<0 or x>4):
@@ -33,17 +33,17 @@ def opciones():
   elif (x==2):
     while (1):
       try:
-        print("1.-Deposito")
-        print("2.-Retiro")
+        print("\t1.-Deposito")
+        print("\t2.-Retiro")
         z=input
         z=int(z)
         while (x<0 or x>2):
-          print("Ingrese correctamente de 1 a 2")
+          print("Ingrese correctamente de 1 a 2: ")
           z=input
           z=int(z)
         break
       except ValueError:
-        print("Ingrese correctamente una opcion valida")
+        print("Ingrese correctamente una opcion valida: ")
     if (z==1):
       ndeposito()
       opciones()
@@ -76,16 +76,16 @@ def nedad():
   global edad
   while(1):
     try:
-      print("Ingrese su Edad ")
+      print("Ingrese su Edad: ")
       edad=input()
       edad=int(edad)
       while(edad<=0 or edad>150):
-        print("Ingrese su Edad Correctamente")
+        print("Ingrese su Edad Correctamente: ")
         edad=input()
         edad=int(edad)
       break
     except ValueError:
-      print("Ingrese Su Edad Correctamente")
+      print("Ingrese Su Edad Correctamente: ")
 #kevin
 def nreporte():
   os.system("clear")
