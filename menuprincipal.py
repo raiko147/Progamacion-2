@@ -1,4 +1,5 @@
 #Programa de prueba (examen)
+import time,os,sys
 print("Programa cajero Banco lA SARITA...")
 print( )
 #Aldo
