@@ -86,7 +86,54 @@ def nedad():
       break
     except ValueError:
       print("Ingrese Su Edad Correctamente")
-      
+#kevin
+def nreporte():
+  os.system("clear")
+  print("*********reporte********)
+  print("NOMBRE    :",nombre)
+  print("DNI       :",dni)
+  print("EDAD      :",edad)
+  print("TIPO      :", cambio,"%",)
+  print("MONTO DE FONDO",fondo,"S/")
+  time.sleep(4)
+def ndni():
+  global dni
+  global cambio
+  dat_dni=""
+  while(1):
+    try:
+      print("Ingrese su DNI: ")
+      dni=input()
+      dni=int(dni)
+      while(len(str(dni))!=8):
+        print("Ingrese de un tamaño de 8 Digitos: ")
+        dni=input()
+        dni=int(dni)
+      data_dni=str(dni)
+      break
+    except ValueError:
+      print("Ingrese Correctamente su DNI: ")
+  if (data_dni[0:2] == "01"):
+    cambio=4
+  elif(data_dni[0:2]=="29"):
+    cambio=4
+  else:
+    cambio=2
+def nfondo():
+  global fondo
+  while(1):
+    try:
+      print("Ingrese su fondo: ")
+      fondo=input()
+      fondo=int(fondo)
+      while(fondo<0):
+        print("Ingrese Correctamente: ")
+        fondo=input()
+        fondo=int(fondo)
+      break
+    except ValueError:
+      print("Ingrese Correctamente: ")
+  
 #christian
 def nretiro():
   os.system("clear")
