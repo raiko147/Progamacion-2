@@ -89,7 +89,7 @@ def nedad():
 #kevin
 def nreporte():
   os.system("clear")
-  print("*********reporte********)
+  print("*********reporte********")
   print("NOMBRE    :",nombre)
   print("DNI       :",dni)
   print("EDAD      :",edad)
@@ -215,7 +215,7 @@ def nmeses():
       while (prestamo < 0):
         print("Ingrese correctamente la cantidad de meses")
         meses = input()
-        meses = int(input)
+        meses = int(meses)
       break
     except ValueError:
       print("Ingrese correctamente")
