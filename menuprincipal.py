@@ -3,12 +3,13 @@ import time,os,sys
 print("Programa cajero Banco lA SARITA...")
 print( )
 #Aldo
-def menu():
+def datos():
   nnombre()
   ndni()
   nedad()
+  nfondo()
+def menu():
   opciones()
-  
 def opciones():
   os.system("clear")
   while(1):
@@ -36,11 +37,11 @@ def opciones():
       try:
         print("\t1.-Deposito")
         print("\t2.-Retiro")
-        z=input
+        z=input()
         z=int(z)
         while (x<0 or x>2):
           print("Ingrese correctamente de 1 a 2: ")
-          z=input
+          z=input()
           z=int(z)
         break
       except ValueError:
@@ -222,10 +223,10 @@ def nmeses():
       print("Ingrese correctamente")
   iprestamo()
 def iprestamo():
-  prestamo = prestamo + ( prestamo*cambio/100*meses )
+  prestamot = prestamo + ( prestamo*cambio/100*meses )
   mest = prestamot / meses
   print("prestamo total",prestamot,"S/")
   print("prestamo mensual", mest, "S/")
   time.sleep(4)
-  
+datos()
 menu()
